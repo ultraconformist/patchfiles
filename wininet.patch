@@ -1,0 +1,12 @@
+diff -Naur wine-patched-staging-2.6/include/wininet.h wine-patched-staging-2.6-wininetpatch/include/wininet.h
+--- wine-patched-staging-2.6/include/wininet.h	2017-04-19 02:05:33.000000000 -0700
++++ wine-patched-staging-2.6-wininetpatch/include/wininet.h	2017-04-27 06:54:26.994898928 -0700
+@@ -46,7 +46,7 @@
+ #define INTERNET_MAX_PASSWORD_LENGTH    128
+ #define INTERNET_MAX_PORT_NUMBER_LENGTH 5
+ #define INTERNET_MAX_PORT_NUMBER_VALUE  65535
+-#define INTERNET_MAX_PATH_LENGTH        2048
++#define INTERNET_MAX_PATH_LENGTH        4096
+ #define INTERNET_MAX_SCHEME_LENGTH      32
+ #define INTERNET_MAX_URL_LENGTH         (INTERNET_MAX_SCHEME_LENGTH + sizeof("://")+ INTERNET_MAX_PATH_LENGTH)
+ #define INTERNET_KEEP_ALIVE_UNKNOWN     ((DWORD)-1)
